@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name ="LP">
+    
+    <test name="smoke" preserve-order="true">
+        <classes>              
+            <class name="cp.testCases.HomepageTest"/>
+            <class name="cp.testCases.ApplynowTest"/>
+    
+        </classes>
+    </test>
+    
+</suite>
