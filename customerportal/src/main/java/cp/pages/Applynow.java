@@ -11,7 +11,8 @@ import cp.utilities.Xlreader;
 
 public class Applynow extends Baseclass{
 	
-	Xlreader objxlread =new Xlreader("D:/Brinder/PhotonWorkspace/customerportal/src/main/java/cp/testData/Testdata.xlsx");
+	Xlreader objxlread =new Xlreader("C:\\Users\\brinderjeet.singh\\git\\customerportal\\customerportal\\src\\main\\java\\cp\\testData\\Testdata.xlsx");
+//	Xlreader objxlread =new Xlreader(System.getProperty("user.dir")+"/src/main/java/cp/testData/Testdata.xlsx");
 	
 //	Xlreader obj1xlread =new Xlreader();
 	

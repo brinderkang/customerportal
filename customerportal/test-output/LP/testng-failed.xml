@@ -3,8 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [LP]">
   <test thread-count="5" name="smoke(failed)">
     <classes>
+      <class name="cp.testCases.HomepageTest">
+        <methods>
+          <include name="verifyPagetitle"/>
+          <include name="setUp"/>
+          <include name="verifyLogo"/>
+          <include name="verifyLinks"/>
+        </methods>
+      </class> <!-- cp.testCases.HomepageTest -->
       <class name="cp.testCases.ApplynowTest">
         <methods>
+          <include name="setUp"/>
           <include name="verfiylogo"/>
           <include name="verifyBasicinfo"/>
         </methods>

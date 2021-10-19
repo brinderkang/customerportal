@@ -2,12 +2,15 @@ package cp.testCases;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import cp.base.Baseclass;
 import cp.pages.Applynow;
-import junit.framework.Assert;
+
+
+
 
 public class ApplynowTest extends Baseclass{
 	

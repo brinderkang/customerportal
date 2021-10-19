@@ -3,10 +3,9 @@
 <suite name ="LP">
     
     <test name="smoke" preserve-order="true">
-        <classes>              
-            <class name="cp.testCases.HomepageTest"/>
-            <class name="cp.testCases.ApplynowTest"/>
-    
+        <classes>            
+           	<class name = "cp.testCases.HomepageTest"/>
+ 			<class name = "cp.testCases.ApplynowTest"/>
         </classes>
     </test>
     
