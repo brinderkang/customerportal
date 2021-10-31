@@ -42,6 +42,7 @@ public class XlsReader {
 		
 	}
 	
+	
 	// returns the row count in a sheet
 		public int getRowCount(String sheetName){
 			int index = workbook.getSheetIndex(sheetName);
@@ -54,6 +55,8 @@ public class XlsReader {
 			}
 			
 		}
+		
+		
 		
 		// returns the data from a cell
 		@SuppressWarnings("deprecation")
