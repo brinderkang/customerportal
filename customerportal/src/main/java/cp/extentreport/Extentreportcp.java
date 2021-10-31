@@ -50,6 +50,7 @@ public class Extentreportcp  implements IReporter {
 	buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
 	}
 	}
+	
 
 	extent.flush();
 	extent.close();

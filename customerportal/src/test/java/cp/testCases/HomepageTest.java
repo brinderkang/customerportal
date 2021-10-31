@@ -27,7 +27,7 @@ public class HomepageTest extends Baseclass {
 	public void verifyPagetitle()
 	{
 		String flag =objhomepage.getTitle();
-		Assert.assertEquals(flag, "Loans from LendingPoint | Apply Now");
+		Assert.assertEquals(flag, "1Loans from LendingPoint | Apply Now");
 	}
 	
 	@Test(priority=2)
