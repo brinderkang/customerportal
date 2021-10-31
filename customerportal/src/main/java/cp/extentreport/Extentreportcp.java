@@ -36,7 +36,7 @@ public class Extentreportcp  implements IReporter {
 	System.out.println(System.getProperty("user.dir"));
 //	extent = new ExtentReports(System.getProperty("user.dir")+"\\test-output\\Logs-extentReport\\extentreport-"+NewFileName+".html", true);
 
-	extent = new ExtentReports(System.getProperty("user.dir")+"\\ExtentreportFiles\\extentreport.html", true);
+	extent = new ExtentReports(System.getProperty("user.dir")+"\\test-output\\ExtentReport\\extentreport.html", true);
 
 	
 	for (ISuite suite : suites) {
