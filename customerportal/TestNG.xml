@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name ="LP">
+<listeners>
+	<listener class-name="cp.extentreport.Extentreportcp"/>
+</listeners>
+    
     
     <test name="smoke" preserve-order="true">
         <classes>            
