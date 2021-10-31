@@ -39,7 +39,9 @@ public class Baseclass {
 		String browsername=prop.getProperty("browser");
 		if(browsername.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver","D:\\Brinder\\BrowserDrivers\\chromedriver.exe");
+//			System.setProperty("webdriver.chrome.driver","D:\\Brinder\\BrowserDrivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/java/cp/browserdrivers/chromedriver.exe");
+			
 			driver=new ChromeDriver();
 		}
 		if(browsername.equals("Firefox"))
