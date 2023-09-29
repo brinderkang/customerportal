@@ -1,0 +1,51 @@
+{
+	"Qualify_request":
+	{
+    "firstName": "JOHN",
+    "lastName": "SMITH",
+    "zip": "30318",
+    "phone": "2127290854",
+    "street": "222334 PEACHTREE PLACE",
+    "unit": "33",
+    "city": "ATLANTA",
+    "state": "CA",
+    "useOfFunds": "Moving",
+    "loanAmount": "10000",
+    "annualIncome": "60000",
+    "email": "bsingh+592@lendingpoint.com",
+    "workEmail": "test@passgiactev.com",
+    "dob": "02/28/1975",
+    "authToPullCredit": "true",
+    "ssn": "112223333",
+    "timeAtCurrentAddress": "08/10/2013",
+    "employmentStartDate": "08/10/2013",
+    "loanPurpose": "Test Loan",
+    "employerName": "Merisol Testcase Employer",
+    "jobTitle": "DEV",
+    "employerStreetAddress": "Merisol Testcase Employer Street Address",
+    "employerCity": "Merisol Testcase Employer City",
+    "employerState": "Merisol Testcase Employer State",
+    "employerZip": "65488",
+    "employerPhone": "4545754545",
+    "campaignId": "CAMPTEST123",
+    "pointCode": "pn-011",
+    "source":"Organic",
+"subSource":"LPCustomerPortal",
+"subProvider":"LPCustomerPortal"
+},
+"Idology_request":
+{
+	"firstName": "JOHN",
+	"lastName": "SMITH",
+	"zip": "30318",
+	"phone": "2678462671",
+	"street": "222333 Peachtree Place",
+	"unit": "33",
+	"city": "ATLANTA",
+	"state": "GA",
+	"email": "brinder8498@lendingpoint.com",
+	"dob": "02/28/1975",
+	"authToPullCredit": "true",
+	"ssn": "112223333"
+}
+}

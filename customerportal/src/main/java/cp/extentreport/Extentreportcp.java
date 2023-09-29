@@ -61,7 +61,8 @@ public class Extentreportcp  implements IReporter {
 
 	if (tests.size() > 0) {
 	for (ITestResult result : tests.getAllResults()) {
-	test = extent.startTest(result.getMethod().getMethodName());
+//	test = extent.startTest(result.getMethod().getMethodName());
+		test = extent.startTest(result.getInstanceName());
 
 	test.setStartedTime(getTime(result.getStartMillis()));
 	test.setEndedTime(getTime(result.getEndMillis()));

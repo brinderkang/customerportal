@@ -9,7 +9,15 @@
     <test name="smoke" preserve-order="true">
         <classes>            
            	<class name = "cp.testCases.HomepageTest"/>
+           	<class name = "cp.testCases.sfloginTest"/>        	          	
  			<class name = "cp.testCases.ApplynowTest"/>
+ 			<class name = "cp.testCases.sfdataTest"/>
+ 			<class name = "cp.testCases.offersTest"/>
+ 			<class name = "cp.testCases.BankInfoTest"/>
+ 			<!--  <class name = "cp.testCases.BankInfoManualTest"/> -->
+ 			<class name = "cp.testCases.IncomeInfoTest"/>
+ 			<class name = "cp.testCases.PaymentSetupTest"/> 
+ 			<class name=  "cp.testCases.TilapageTest"/>
         </classes>
     </test>
     

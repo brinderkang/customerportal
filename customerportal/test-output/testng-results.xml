@@ -1,43 +1,881 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="4" ignored="6" total="30" passed="20">
   <reporter-output>
   </reporter-output>
-  <suite name="LP" duration-ms="9476" started-at="2021-10-29T22:44:44 IST" finished-at="2021-10-29T22:44:54 IST">
+  <suite name="LP" duration-ms="221321" started-at="2023-08-25T15:39:20 IST" finished-at="2023-08-25T15:43:01 IST">
     <groups>
+      <group name="apply">
+        <method signature="ApplynowTest.verfiylogo()[pri:1, instance:cp.testCases.ApplynowTest@4b53f538]" name="verfiylogo" class="cp.testCases.ApplynowTest"/>
+        <method signature="ApplynowTest.verifyBasicinfo()[pri:2, instance:cp.testCases.ApplynowTest@4b53f538]" name="verifyBasicinfo" class="cp.testCases.ApplynowTest"/>
+        <method signature="ApplynowTest.verifySubmitLoanApplication()[pri:3, instance:cp.testCases.ApplynowTest@4b53f538]" name="verifySubmitLoanApplication" class="cp.testCases.ApplynowTest"/>
+      </group> <!-- apply -->
+      <group name="homepage">
+        <method signature="HomepageTest.verifyLinks()[pri:3, instance:cp.testCases.HomepageTest@16022d9d]" name="verifyLinks" class="cp.testCases.HomepageTest"/>
+        <method signature="HomepageTest.verifyLogo()[pri:2, instance:cp.testCases.HomepageTest@16022d9d]" name="verifyLogo" class="cp.testCases.HomepageTest"/>
+        <method signature="HomepageTest.verifyPagetitle()[pri:1, instance:cp.testCases.HomepageTest@16022d9d]" name="verifyPagetitle" class="cp.testCases.HomepageTest"/>
+      </group> <!-- homepage -->
     </groups>
-    <test name="smoke" duration-ms="9476" started-at="2021-10-29T22:44:44 IST" finished-at="2021-10-29T22:44:54 IST">
+    <test name="smoke" duration-ms="221321" started-at="2023-08-25T15:39:20 IST" finished-at="2023-08-25T15:43:01 IST">
+      <class name="cp.testCases.sfloginTest">
+        <test-method status="PASS" signature="salesforcelogintest()[pri:0, instance:cp.testCases.sfloginTest@61ca2dfa]" name="salesforcelogintest" duration-ms="2761" started-at="2023-08-25T15:39:37 IST" finished-at="2023-08-25T15:39:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- salesforcelogintest -->
+      </class> <!-- cp.testCases.sfloginTest -->
       <class name="cp.testCases.HomepageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:cp.testCases.HomepageTest@10a035a0]" name="setUp" is-config="true" duration-ms="8481" started-at="2021-10-29T22:44:36 IST" finished-at="2021-10-29T22:44:44 IST">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:cp.testCases.HomepageTest@16022d9d]" name="beforeSuite" is-config="true" duration-ms="77" started-at="2023-08-25T15:39:20 IST" finished-at="2023-08-25T15:39:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cp.testCases.HomepageTest@16022d9d]" name="setUp" is-config="true" duration-ms="7427" started-at="2023-08-25T15:39:20 IST" finished-at="2023-08-25T15:39:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPagetitle()[pri:1, instance:cp.testCases.HomepageTest@10a035a0]" name="verifyPagetitle" duration-ms="14" started-at="2021-10-29T22:44:44 IST" finished-at="2021-10-29T22:44:44 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cp.testCases.HomepageTest@16022d9d]" name="beforeClass" is-config="true" duration-ms="2" started-at="2023-08-25T15:39:27 IST" finished-at="2023-08-25T15:39:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.HomepageTest@16022d9d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2023-08-25T15:39:27 IST" finished-at="2023-08-25T15:39:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.HomepageTest.verifyPagetitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyPagetitle()[pri:1, instance:cp.testCases.HomepageTest@16022d9d]" name="verifyPagetitle" duration-ms="14" started-at="2023-08-25T15:39:27 IST" finished-at="2023-08-25T15:39:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPagetitle -->
-        <test-method status="PASS" signature="verifyLogo()[pri:2, instance:cp.testCases.HomepageTest@10a035a0]" name="verifyLogo" duration-ms="65" started-at="2021-10-29T22:44:44 IST" finished-at="2021-10-29T22:44:44 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.HomepageTest@16022d9d]" name="afterMethod" is-config="true" duration-ms="246" started-at="2023-08-25T15:39:27 IST" finished-at="2023-08-25T15:39:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPagetitle status=SUCCESS method=HomepageTest.verifyPagetitle()[pri:1, instance:cp.testCases.HomepageTest@16022d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.HomepageTest@16022d9d]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2023-08-25T15:39:28 IST" finished-at="2023-08-25T15:39:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.HomepageTest.verifyLogo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="verifyLogo()[pri:2, instance:cp.testCases.HomepageTest@16022d9d]" name="verifyLogo" duration-ms="58" started-at="2023-08-25T15:39:28 IST" finished-at="2023-08-25T15:39:28 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at cp.testCases.HomepageTest.verifyLogo(HomepageTest.java:70)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogo -->
-        <test-method status="PASS" signature="verifyLinks()[pri:3, instance:cp.testCases.HomepageTest@10a035a0]" name="verifyLinks" duration-ms="287" started-at="2021-10-29T22:44:44 IST" finished-at="2021-10-29T22:44:45 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.HomepageTest@16022d9d]" name="afterMethod" is-config="true" duration-ms="74" started-at="2023-08-25T15:39:28 IST" finished-at="2023-08-25T15:39:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogo status=FAILURE method=HomepageTest.verifyLogo()[pri:2, instance:cp.testCases.HomepageTest@16022d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.HomepageTest@16022d9d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:39:28 IST" finished-at="2023-08-25T15:39:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.HomepageTest.verifyLinks() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyLinks()[pri:3, instance:cp.testCases.HomepageTest@16022d9d]" name="verifyLinks" duration-ms="8811" started-at="2023-08-25T15:39:28 IST" finished-at="2023-08-25T15:39:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLinks -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.HomepageTest@16022d9d]" name="afterMethod" is-config="true" duration-ms="60" started-at="2023-08-25T15:39:37 IST" finished-at="2023-08-25T15:39:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLinks status=SUCCESS method=HomepageTest.verifyLinks()[pri:3, instance:cp.testCases.HomepageTest@16022d9d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- cp.testCases.HomepageTest -->
+      <class name="cp.testCases.TilapageTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.TilapageTest@69379752]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:41:42 IST" finished-at="2023-08-25T15:41:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.TilapageTest.verifyconsent1()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.TilapageTest@69379752]" name="setup" is-config="true" duration-ms="3" started-at="2023-08-25T15:41:42 IST" finished-at="2023-08-25T15:41:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cp.testCases.TilapageTest@69379752]" name="beforeClass" is-config="true" duration-ms="0" started-at="2023-08-25T15:41:42 IST" finished-at="2023-08-25T15:41:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="verifyconsent1()[pri:1, instance:cp.testCases.TilapageTest@69379752]" name="verifyconsent1" duration-ms="59117" started-at="2023-08-25T15:41:42 IST" finished-at="2023-08-25T15:42:41 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at cp.testCases.TilapageTest.verifyconsent1(TilapageTest.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyconsent1 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.TilapageTest@69379752]" name="afterMethod" is-config="true" duration-ms="40" started-at="2023-08-25T15:42:41 IST" finished-at="2023-08-25T15:42:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyconsent1 status=FAILURE method=TilapageTest.verifyconsent1()[pri:1, instance:cp.testCases.TilapageTest@69379752] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.TilapageTest@69379752]" name="setup" is-config="true" duration-ms="1" started-at="2023-08-25T15:42:41 IST" finished-at="2023-08-25T15:42:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.TilapageTest@69379752]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:42:41 IST" finished-at="2023-08-25T15:42:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.TilapageTest.verifyconsent2()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="verifyconsent2()[pri:2, instance:cp.testCases.TilapageTest@69379752]" name="verifyconsent2" duration-ms="10061" started-at="2023-08-25T15:42:41 IST" finished-at="2023-08-25T15:42:51 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at cp.testCases.TilapageTest.verifyconsent2(TilapageTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyconsent2 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.TilapageTest@69379752]" name="afterMethod" is-config="true" duration-ms="49" started-at="2023-08-25T15:42:51 IST" finished-at="2023-08-25T15:42:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyconsent2 status=FAILURE method=TilapageTest.verifyconsent2()[pri:2, instance:cp.testCases.TilapageTest@69379752] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.TilapageTest@69379752]" name="setup" is-config="true" duration-ms="0" started-at="2023-08-25T15:42:51 IST" finished-at="2023-08-25T15:42:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.TilapageTest@69379752]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:42:51 IST" finished-at="2023-08-25T15:42:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.TilapageTest.verifySignContract()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="verifySignContract()[pri:3, instance:cp.testCases.TilapageTest@69379752]" name="verifySignContract" duration-ms="10061" started-at="2023-08-25T15:42:51 IST" finished-at="2023-08-25T15:43:01 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at cp.testCases.TilapageTest.verifySignContract(TilapageTest.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignContract -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.TilapageTest@69379752]" name="afterMethod" is-config="true" duration-ms="42" started-at="2023-08-25T15:43:01 IST" finished-at="2023-08-25T15:43:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySignContract status=FAILURE method=TilapageTest.verifySignContract()[pri:3, instance:cp.testCases.TilapageTest@69379752] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- cp.testCases.TilapageTest -->
+      <class name="cp.testCases.sfdataTest">
+        <test-method status="PASS" signature="salesforcedata()[pri:1, instance:cp.testCases.sfdataTest@5fcd892a]" name="salesforcedata" duration-ms="2323" started-at="2023-08-25T15:40:18 IST" finished-at="2023-08-25T15:40:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- salesforcedata -->
+        <test-method status="PASS" signature="salesforceOpp()[pri:2, instance:cp.testCases.sfdataTest@5fcd892a]" name="salesforceOpp" duration-ms="1782" started-at="2023-08-25T15:40:20 IST" finished-at="2023-08-25T15:40:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- salesforceOpp -->
+      </class> <!-- cp.testCases.sfdataTest -->
+      <class name="cp.testCases.offersTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.offersTest@543e710e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2023-08-25T15:40:22 IST" finished-at="2023-08-25T15:40:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.offersTest.verifyotpbox()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cp.testCases.offersTest@543e710e]" name="beforeClass" is-config="true" duration-ms="0" started-at="2023-08-25T15:40:22 IST" finished-at="2023-08-25T15:40:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.offersTest@543e710e]" name="setup" is-config="true" duration-ms="24" started-at="2023-08-25T15:40:22 IST" finished-at="2023-08-25T15:40:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyotpbox()[pri:1, instance:cp.testCases.offersTest@543e710e]" name="verifyotpbox" duration-ms="2323" started-at="2023-08-25T15:40:22 IST" finished-at="2023-08-25T15:40:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyotpbox -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.offersTest@543e710e]" name="afterMethod" is-config="true" duration-ms="87" started-at="2023-08-25T15:40:24 IST" finished-at="2023-08-25T15:40:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyotpbox status=SUCCESS method=offersTest.verifyotpbox()[pri:1, instance:cp.testCases.offersTest@543e710e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.offersTest@543e710e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:40:25 IST" finished-at="2023-08-25T15:40:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.offersTest.verifyRightPanel() throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.offersTest@543e710e]" name="setup" is-config="true" duration-ms="36" started-at="2023-08-25T15:40:25 IST" finished-at="2023-08-25T15:40:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyRightPanel()[pri:2, instance:cp.testCases.offersTest@543e710e]" name="verifyRightPanel" duration-ms="2645" started-at="2023-08-25T15:40:25 IST" finished-at="2023-08-25T15:40:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRightPanel -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.offersTest@543e710e]" name="afterMethod" is-config="true" duration-ms="61" started-at="2023-08-25T15:40:27 IST" finished-at="2023-08-25T15:40:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRightPanel status=SUCCESS method=offersTest.verifyRightPanel()[pri:2, instance:cp.testCases.offersTest@543e710e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.offersTest@543e710e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:40:27 IST" finished-at="2023-08-25T15:40:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.offersTest.verifySlidermovement()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.offersTest@543e710e]" name="setup" is-config="true" duration-ms="24" started-at="2023-08-25T15:40:27 IST" finished-at="2023-08-25T15:40:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifySlidermovement()[pri:3, instance:cp.testCases.offersTest@543e710e]" name="verifySlidermovement" duration-ms="341" started-at="2023-08-25T15:40:27 IST" finished-at="2023-08-25T15:40:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySlidermovement -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.offersTest@543e710e]" name="afterMethod" is-config="true" duration-ms="63" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySlidermovement status=SUCCESS method=offersTest.verifySlidermovement()[pri:3, instance:cp.testCases.offersTest@543e710e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.offersTest@543e710e]" name="setup" is-config="true" duration-ms="17" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.offersTest@543e710e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.offersTest.verifyOffercontainer()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyOffercontainer()[pri:4, instance:cp.testCases.offersTest@543e710e]" name="verifyOffercontainer" duration-ms="278" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOffercontainer -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.offersTest@543e710e]" name="afterMethod" is-config="true" duration-ms="43" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyOffercontainer status=SUCCESS method=offersTest.verifyOffercontainer()[pri:4, instance:cp.testCases.offersTest@543e710e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.offersTest@543e710e]" name="setup" is-config="true" duration-ms="14" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.offersTest@543e710e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.offersTest.verifySelectOffer()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifySelectOffer()[pri:5, instance:cp.testCases.offersTest@543e710e]" name="verifySelectOffer" duration-ms="61" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySelectOffer -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.offersTest@543e710e]" name="afterMethod" is-config="true" duration-ms="63" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySelectOffer status=SUCCESS method=offersTest.verifySelectOffer()[pri:5, instance:cp.testCases.offersTest@543e710e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- cp.testCases.offersTest -->
+      <class name="cp.testCases.IncomeInfoTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cp.testCases.IncomeInfoTest@44f75083]" name="beforeClass" is-config="true" duration-ms="0" started-at="2023-08-25T15:41:17 IST" finished-at="2023-08-25T15:41:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.IncomeInfoTest@44f75083]" name="setup" is-config="true" duration-ms="2" started-at="2023-08-25T15:41:17 IST" finished-at="2023-08-25T15:41:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.IncomeInfoTest@44f75083]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:41:17 IST" finished-at="2023-08-25T15:41:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.IncomeInfoTest.VerifyIncomeInfoText()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="VerifyIncomeInfoText()[pri:1, instance:cp.testCases.IncomeInfoTest@44f75083]" name="VerifyIncomeInfoText" duration-ms="13326" started-at="2023-08-25T15:41:17 IST" finished-at="2023-08-25T15:41:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyIncomeInfoText -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.IncomeInfoTest@44f75083]" name="afterMethod" is-config="true" duration-ms="50" started-at="2023-08-25T15:41:30 IST" finished-at="2023-08-25T15:41:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyIncomeInfoText status=SUCCESS method=IncomeInfoTest.VerifyIncomeInfoText()[pri:1, instance:cp.testCases.IncomeInfoTest@44f75083] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.IncomeInfoTest@44f75083]" name="setup" is-config="true" duration-ms="1" started-at="2023-08-25T15:41:30 IST" finished-at="2023-08-25T15:41:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.IncomeInfoTest@44f75083]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:41:30 IST" finished-at="2023-08-25T15:41:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.IncomeInfoTest.verifyEnterBankDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyEnterBankDetails()[pri:2, instance:cp.testCases.IncomeInfoTest@44f75083]" name="verifyEnterBankDetails" duration-ms="691" started-at="2023-08-25T15:41:30 IST" finished-at="2023-08-25T15:41:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnterBankDetails -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.IncomeInfoTest@44f75083]" name="afterMethod" is-config="true" duration-ms="53" started-at="2023-08-25T15:41:31 IST" finished-at="2023-08-25T15:41:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEnterBankDetails status=SUCCESS method=IncomeInfoTest.verifyEnterBankDetails()[pri:2, instance:cp.testCases.IncomeInfoTest@44f75083] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- cp.testCases.IncomeInfoTest -->
       <class name="cp.testCases.ApplynowTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:cp.testCases.ApplynowTest@710726a3]" name="setUp" is-config="true" duration-ms="26" started-at="2021-10-29T22:44:44 IST" finished-at="2021-10-29T22:44:44 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cp.testCases.ApplynowTest@4b53f538]" name="setUp" is-config="true" duration-ms="33" started-at="2023-08-25T15:39:39 IST" finished-at="2023-08-25T15:39:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verfiylogo()[pri:0, instance:cp.testCases.ApplynowTest@710726a3]" name="verfiylogo" duration-ms="4286" started-at="2021-10-29T22:44:45 IST" finished-at="2021-10-29T22:44:49 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cp.testCases.ApplynowTest@4b53f538]" name="beforeClass" is-config="true" duration-ms="0" started-at="2023-08-25T15:39:39 IST" finished-at="2023-08-25T15:39:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.ApplynowTest@4b53f538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:39:39 IST" finished-at="2023-08-25T15:39:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.ApplynowTest.verfiylogo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verfiylogo()[pri:1, instance:cp.testCases.ApplynowTest@4b53f538]" name="verfiylogo" duration-ms="39" started-at="2023-08-25T15:39:39 IST" finished-at="2023-08-25T15:39:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verfiylogo -->
-        <test-method status="PASS" signature="verifyBasicinfo()[pri:0, instance:cp.testCases.ApplynowTest@710726a3]" name="verifyBasicinfo" duration-ms="4772" started-at="2021-10-29T22:44:49 IST" finished-at="2021-10-29T22:44:54 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.ApplynowTest@4b53f538]" name="afterMethod" is-config="true" duration-ms="88" started-at="2023-08-25T15:39:40 IST" finished-at="2023-08-25T15:39:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verfiylogo status=SUCCESS method=ApplynowTest.verfiylogo()[pri:1, instance:cp.testCases.ApplynowTest@4b53f538] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cp.testCases.ApplynowTest@4b53f538]" name="setUp" is-config="true" duration-ms="31" started-at="2023-08-25T15:39:40 IST" finished-at="2023-08-25T15:39:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.ApplynowTest@4b53f538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:39:40 IST" finished-at="2023-08-25T15:39:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.ApplynowTest.verifyBasicinfo() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyBasicinfo()[pri:2, instance:cp.testCases.ApplynowTest@4b53f538]" name="verifyBasicinfo" duration-ms="14048" started-at="2023-08-25T15:39:40 IST" finished-at="2023-08-25T15:39:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyBasicinfo -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.ApplynowTest@4b53f538]" name="afterMethod" is-config="true" duration-ms="51" started-at="2023-08-25T15:39:54 IST" finished-at="2023-08-25T15:39:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBasicinfo status=SUCCESS method=ApplynowTest.verifyBasicinfo()[pri:2, instance:cp.testCases.ApplynowTest@4b53f538] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cp.testCases.ApplynowTest@4b53f538]" name="setUp" is-config="true" duration-ms="31" started-at="2023-08-25T15:39:54 IST" finished-at="2023-08-25T15:39:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.ApplynowTest@4b53f538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:39:54 IST" finished-at="2023-08-25T15:39:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.ApplynowTest.verifySubmitLoanApplication()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifySubmitLoanApplication()[pri:3, instance:cp.testCases.ApplynowTest@4b53f538]" name="verifySubmitLoanApplication" duration-ms="24191" started-at="2023-08-25T15:39:54 IST" finished-at="2023-08-25T15:40:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitLoanApplication -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.ApplynowTest@4b53f538]" name="afterMethod" is-config="true" duration-ms="61" started-at="2023-08-25T15:40:18 IST" finished-at="2023-08-25T15:40:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySubmitLoanApplication status=SUCCESS method=ApplynowTest.verifySubmitLoanApplication()[pri:3, instance:cp.testCases.ApplynowTest@4b53f538] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
       </class> <!-- cp.testCases.ApplynowTest -->
+      <class name="cp.testCases.BankInfoTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="setup" is-config="true" duration-ms="3" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="beforeClass" is-config="true" duration-ms="0" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.BankInfoTest.verifybankInfoElements()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifybankInfoElements()[pri:1, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="verifybankInfoElements" duration-ms="20175" started-at="2023-08-25T15:40:28 IST" finished-at="2023-08-25T15:40:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifybankInfoElements -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="afterMethod" is-config="true" duration-ms="50" started-at="2023-08-25T15:40:48 IST" finished-at="2023-08-25T15:40:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifybankInfoElements status=SUCCESS method=BankInfoTest.verifybankInfoElements()[pri:1, instance:cp.testCases.BankInfoTest@3d0f8e03] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="setup" is-config="true" duration-ms="1" started-at="2023-08-25T15:40:48 IST" finished-at="2023-08-25T15:40:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:40:48 IST" finished-at="2023-08-25T15:40:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.BankInfoTest.verifyPlaidBankConnect()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyPlaidBankConnect()[pri:2, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="verifyPlaidBankConnect" duration-ms="22358" started-at="2023-08-25T15:40:48 IST" finished-at="2023-08-25T15:41:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPlaidBankConnect -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="afterMethod" is-config="true" duration-ms="47" started-at="2023-08-25T15:41:11 IST" finished-at="2023-08-25T15:41:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPlaidBankConnect status=SUCCESS method=BankInfoTest.verifyPlaidBankConnect()[pri:2, instance:cp.testCases.BankInfoTest@3d0f8e03] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2023-08-25T15:41:11 IST" finished-at="2023-08-25T15:41:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.BankInfoTest.verifyPlaidBankLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="setup" is-config="true" duration-ms="0" started-at="2023-08-25T15:41:11 IST" finished-at="2023-08-25T15:41:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyPlaidBankLogin()[pri:3, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="verifyPlaidBankLogin" duration-ms="5705" started-at="2023-08-25T15:41:11 IST" finished-at="2023-08-25T15:41:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPlaidBankLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.BankInfoTest@3d0f8e03]" name="afterMethod" is-config="true" duration-ms="39" started-at="2023-08-25T15:41:17 IST" finished-at="2023-08-25T15:41:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPlaidBankLogin status=SUCCESS method=BankInfoTest.verifyPlaidBankLogin()[pri:3, instance:cp.testCases.BankInfoTest@3d0f8e03] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- cp.testCases.BankInfoTest -->
+      <class name="cp.testCases.PaymentSetupTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cp.testCases.PaymentSetupTest@43d7741f]" name="beforeClass" is-config="true" duration-ms="0" started-at="2023-08-25T15:41:31 IST" finished-at="2023-08-25T15:41:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.PaymentSetupTest@43d7741f]" name="setup" is-config="true" duration-ms="2" started-at="2023-08-25T15:41:31 IST" finished-at="2023-08-25T15:41:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.PaymentSetupTest@43d7741f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2023-08-25T15:41:31 IST" finished-at="2023-08-25T15:41:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.PaymentSetupTest.verifyRepaymentInfoText()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyRepaymentInfoText()[pri:1, instance:cp.testCases.PaymentSetupTest@43d7741f]" name="verifyRepaymentInfoText" duration-ms="8846" started-at="2023-08-25T15:41:31 IST" finished-at="2023-08-25T15:41:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRepaymentInfoText -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.PaymentSetupTest@43d7741f]" name="afterMethod" is-config="true" duration-ms="43" started-at="2023-08-25T15:41:40 IST" finished-at="2023-08-25T15:41:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRepaymentInfoText status=SUCCESS method=PaymentSetupTest.verifyRepaymentInfoText()[pri:1, instance:cp.testCases.PaymentSetupTest@43d7741f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:cp.testCases.PaymentSetupTest@43d7741f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2023-08-25T15:41:40 IST" finished-at="2023-08-25T15:41:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cp.testCases.PaymentSetupTest.verifyRepaymentDetails() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:cp.testCases.PaymentSetupTest@43d7741f]" name="setup" is-config="true" duration-ms="0" started-at="2023-08-25T15:41:40 IST" finished-at="2023-08-25T15:41:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyRepaymentDetails()[pri:2, instance:cp.testCases.PaymentSetupTest@43d7741f]" name="verifyRepaymentDetails" duration-ms="2245" started-at="2023-08-25T15:41:40 IST" finished-at="2023-08-25T15:41:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRepaymentDetails -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:cp.testCases.PaymentSetupTest@43d7741f]" name="afterMethod" is-config="true" duration-ms="48" started-at="2023-08-25T15:41:42 IST" finished-at="2023-08-25T15:41:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRepaymentDetails status=SUCCESS method=PaymentSetupTest.verifyRepaymentDetails()[pri:2, instance:cp.testCases.PaymentSetupTest@43d7741f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- cp.testCases.PaymentSetupTest -->
     </test> <!-- smoke -->
   </suite> <!-- LP -->
 </testng-results>

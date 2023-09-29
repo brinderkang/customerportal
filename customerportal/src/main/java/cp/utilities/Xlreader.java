@@ -14,6 +14,7 @@ import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class Xlreader {
@@ -62,7 +63,7 @@ public class Xlreader {
 		return cellcount;
 	}
 	
-	public static String getCellData(String xlsheet,int rownum,int colnum) throws IOException
+	public static String getCellData1(String xlsheet,int rownum,int colnum) throws IOException
 	{
 //		fi=new FileInputStream(xlfile);
 //		wb=new XSSFWorkbook(fi);
@@ -80,6 +81,56 @@ public class Xlreader {
 		wb.close();
 		fi.close();
 		return data;
+	}
+	
+	public static String getCellData(String xlsheet,int rownum,int colnum) throws IOException
+	{
+//		fi=new FileInputStream(xlfile);
+//		wb=new XSSFWorkbook(fi);
+		ws=wb.getSheet(xlsheet);
+		row=ws.getRow(rownum);
+		cell=row.getCell(colnum);
+		String data;
+		try 
+		{
+			if(cell.getCellType()==CellType.STRING) {
+				  return cell.getStringCellValue();				  
+			}
+			else if(cell.getCellType()==CellType.NUMERIC || cell.getCellType()==CellType.FORMULA ){
+				  
+				  String cellText  = String.valueOf(cell.getNumericCellValue());
+				  String str = NumberToTextConverter.toText(cell.getNumericCellValue());
+				  if (HSSFDateUtil.isCellDateFormatted(cell)) {
+			           
+					  double d = cell.getNumericCellValue();
+
+					  Calendar cal =Calendar.getInstance();
+					  cal.setTime(HSSFDateUtil.getJavaDate(d));
+			            cellText =
+			             (String.valueOf(cal.get(Calendar.YEAR))).substring(0);
+			           cellText = cal.get(Calendar.DAY_OF_MONTH) + "/" +
+			                      cal.get(Calendar.MONTH)+1 + "/" + 
+			                      cellText;
+			           			          
+			         }
+
+				  
+				  
+				  return cellText;
+			  }else if(cell.getCellType()==CellType.BLANK)
+			      return ""; 
+			  else 
+				  return String.valueOf(cell.getBooleanCellValue());
+			
+			}
+			catch(Exception e){
+				
+				e.printStackTrace();
+				return "row "+rownum+" or column "+colnum +" does not exist in xls";
+			}
+//		wb.close();
+//		fi.close();
+//		return data;
 	}
 	
 //	Get getdata by column name
@@ -120,9 +171,7 @@ public class Xlreader {
 			           cellText = cal.get(Calendar.DAY_OF_MONTH) + "/" +
 			                      cal.get(Calendar.MONTH)+1 + "/" + 
 			                      cellText;
-			           
-			          
-
+			           			          
 			         }
 
 				  

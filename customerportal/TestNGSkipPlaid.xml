@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name ="LP">
+<!--  <listeners>
+	<listener class-name="cp.extentreport.ExtentTestNGReportBuilder"/>
+</listeners>  -->
+    
+    
+    <test name="smoke" preserve-order="true">
+        <classes>            
+           	<class name = "cp.testCases.HomepageTest"/>
+           	 <class name = "cp.testCases.sfloginTest"/>                	
+ 			<class name = "cp.testCases.ApplynowTest"/>
+ 		 	<class name = "cp.testCases.sfdataTest"/>   
+ 			<class name = "cp.testCases.offersTest"/>
+ 		 	<class name = "cp.testCases.BankInfoSkipPlaidTest"/>
+ 			<class name = "cp.testCases.BankInfoManualTest"/>
+ 			<class name = "cp.testCases.IncomeInfoTest"/>
+ 			<class name = "cp.testCases.PaymentSetupTest"/> 
+ 			<class name = "cp.testCases.TilapageTest"/>        
+        </classes>
+    </test>
+    
+</suite>

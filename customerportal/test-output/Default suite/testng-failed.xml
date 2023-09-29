@@ -5,10 +5,12 @@
     <classes>
       <class name="cp.testCases.HomepageTest">
         <methods>
-          <include name="verifyPagetitle"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
           <include name="setUp"/>
+          <include name="afterMethod"/>
           <include name="verifyLogo"/>
-          <include name="tearDown"/>
+          <include name="beforeSuite"/>
         </methods>
       </class> <!-- cp.testCases.HomepageTest -->
     </classes>
