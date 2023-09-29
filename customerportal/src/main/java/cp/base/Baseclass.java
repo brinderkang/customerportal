@@ -54,7 +54,7 @@ public class Baseclass extends ExtentTestNGReportBuilder {
 	public void initialisation()
 	{
 		String browsername=prop.getProperty("browser");
-//		System.out.println(browsername);
+		System.out.println(browsername);
 		if(browsername.equalsIgnoreCase("chrome"))
 		{
 //			System.setProperty("webdriver.chrome.driver","D:\\Brinder\\BrowserDrivers\\chromedriver.exe");
