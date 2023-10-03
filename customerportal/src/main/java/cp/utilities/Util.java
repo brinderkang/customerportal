@@ -1,11 +1,11 @@
 package cp.utilities;
 
-import java.io.File;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import org.apache.commons.lang3.RandomStringUtils;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -86,7 +86,7 @@ public class Util extends Baseclass {
 	}
 	public static void getelementlist(List<WebElement> listele)
 	{
-		List<WebElement> listele1 = new ArrayList<>();
+		List<WebElement> listele1 = new ArrayList();
 		for(WebElement ele:listele)
 		{			
 			listele1.add(ele);			
@@ -98,19 +98,19 @@ public class Util extends Baseclass {
 	public static void waituntilElementClickable(WebElement element)
 	{
 		WebDriverWait wait;
-		wait =new WebDriverWait(driver,40);
+		wait =new WebDriverWait(driver,Duration.ofSeconds(40));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	public static void waituntilElementPresent(WebElement element)
 	{
 		WebDriverWait wait;
-		wait =new WebDriverWait(driver,40);
+		wait =new WebDriverWait(driver,Duration.ofSeconds(40));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	public static void waituntilElementDisappear(WebElement element)
 	{
 		WebDriverWait wait;
-		wait =new WebDriverWait(driver,40);
+		wait =new WebDriverWait(driver,Duration.ofSeconds(40));
 		wait.until(ExpectedConditions.invisibilityOf(element));
 	}
 	
@@ -170,12 +170,12 @@ public class Util extends Baseclass {
 		}
 		
 //		RANDOM ALPHABETS
-		public static String randomalphabets(int length)
-		{
-			String generatedString = "test"+RandomStringUtils.randomAlphabetic(length);
-	        //System.out.println(generatedString.toLowerCase());
-			return generatedString.toLowerCase();
-		}
+//		public static String randomalphabets(int length)
+//		{
+//			String generatedString = "test"+RandomStringUtils.randomAlphabetic(length);
+//	        //System.out.println(generatedString.toLowerCase());
+//			return generatedString.toLowerCase();
+//		}
 	
 //	public void takeScreenShot(ITestResult result){
 //

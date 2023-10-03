@@ -23,7 +23,6 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import cp.extentreport.ExtentTestNGReportBuilder;
 import cp.utilities.Util;
 
@@ -32,6 +31,7 @@ public class Baseclass extends ExtentTestNGReportBuilder {
 	public static Properties prop;
 	public static ExtentReports report;
 //	public static ExtentTest test;
+	ChromeOptions co;
 	
 	public Baseclass() {
 		try {
@@ -59,8 +59,17 @@ public class Baseclass extends ExtentTestNGReportBuilder {
 		{
 //			System.setProperty("webdriver.chrome.driver","D:\\Brinder\\BrowserDrivers\\chromedriver.exe");
 //			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/java/cp/browserdrivers/chromedriver.exe");
-			WebDriverManager.chromedriver().setup();
+			
+//			WebDriverManager.chromedriver().setup();
+//			driver=new ChromeDriver();
+			
+			 co  = new ChromeOptions();
+			co.setBrowserVersion("116");
 			driver=new ChromeDriver();
+			
+//			WebDriverManager.chromedriver().setup();
+//			WebDriver.chromedriver().setup();
+			
 		}
 		if(browsername.equals("Firefox"))
 		{
@@ -69,12 +78,12 @@ public class Baseclass extends ExtentTestNGReportBuilder {
 		}
 		if(browsername.equals("headless"))
 		{
-			WebDriverManager.chromedriver().setup();
-	        ChromeOptions chromeOptions = new ChromeOptions();
-	        chromeOptions.addArguments("--no-sandbox");
-	        chromeOptions.addArguments("--headless");
-	        chromeOptions.addArguments("disable-gpu");
-	        driver=new ChromeDriver(chromeOptions);
+//			WebDriverManager.chromedriver().setup();
+//	        ChromeOptions chromeOptions = new ChromeOptions();
+	        co.addArguments("--no-sandbox");
+	        co.addArguments("--headless");
+	        co.addArguments("disable-gpu");
+	        driver=new ChromeDriver(co);
 		}
 		
 		driver.manage().window().maximize();
