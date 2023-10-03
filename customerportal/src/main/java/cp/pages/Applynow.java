@@ -88,7 +88,7 @@ public class Applynow extends Baseclass{
 		{
 			String column_name=Xlreader.getCellData("testmain", 0, i);
 			String cell_data=Xlreader.getCellData("testmain", rownumber, i);
-			System.out.println(column_name.toLowerCase());
+//			System.out.println(column_name.toLowerCase());
 			System.out.println(cell_data+ " ");
 			switch(column_name.toLowerCase())
 			{
