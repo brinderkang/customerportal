@@ -18,6 +18,16 @@
           <include name="beforeSuite"/>
         </methods>
       </class> <!-- cp.testCases.TilapageTest -->
+      <class name="cp.testCases.PaymentSetupTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="verifyRepaymentInfoText"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- cp.testCases.PaymentSetupTest -->
       <class name="cp.testCases.HomepageTest">
         <methods>
           <include name="beforeMethod"/>
