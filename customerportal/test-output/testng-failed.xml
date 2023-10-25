@@ -1,33 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [LP]">
-  <listeners>
-    <listener class-name="cp.extentreport.Extentreportcp"/>
-  </listeners>
-  <test thread-count="5" name="smoke(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cp.testCases.TilapageTest">
-        <methods>
-          <include name="verifyconsent1"/>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="verifySignContract"/>
-          <include name="afterMethod"/>
-          <include name="setup"/>
-          <include name="verifyconsent2"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- cp.testCases.TilapageTest -->
-      <class name="cp.testCases.PaymentSetupTest">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="verifyRepaymentInfoText"/>
-          <include name="beforeSuite"/>
-        </methods>
-      </class> <!-- cp.testCases.PaymentSetupTest -->
       <class name="cp.testCases.HomepageTest">
         <methods>
           <include name="beforeMethod"/>
@@ -39,5 +14,5 @@
         </methods>
       </class> <!-- cp.testCases.HomepageTest -->
     </classes>
-  </test> <!-- smoke(failed) -->
-</suite> <!-- Failed suite [LP] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

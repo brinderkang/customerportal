@@ -30,8 +30,8 @@ public class HomepageTest extends Baseclass {
 //	{
 ////		initialisation();
 ////		extent = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReport.html", true);
-////		extent.addSystemInfo("Host Name", "Naveen Mac");
-////		extent.addSystemInfo("User Name", "Naveen Automation Labs");
+////		extent.addSystemInfo("Host Name", "B kang");
+////		extent.addSystemInfo("User Name", "Bkang");
 ////		extent.addSystemInfo("Environment", "QA");
 //	}
 	
