@@ -123,7 +123,7 @@ public class Util extends Baseclass {
 	{
 		try {
 			int st = (data.substring(data.indexOf("."))).length();
-			System.out.println(st);
+			System.out.println("String name  " +st);
 			if((data.substring(data.indexOf(".")).length()>2))
 			{
 				return data;
